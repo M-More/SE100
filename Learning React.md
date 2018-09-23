@@ -33,7 +33,7 @@ Since component logic is written in JavaScript instead of templates, you can eas
 
 ***
 
-### More details about React
+### More about React Components
 In React you can create components that have special functionality. Each component is contained in its own “scope”, so we can define the functionality of the component and reuse it as many times as we want without them interfering with each other.
 Each component has a `render` function, which effectively returns the HTML that the component will render in the browser.
 #### Using JSX
@@ -64,7 +64,7 @@ Here are some lifecycle methods in React:
 * `shouldComponentUpdate` - Return value determines whether component should update.
 * `componentWillUnmount` - Invoked prior to unmounting component.
 
-####Component Methods
+#### Component Methods
 React also offers us methods for our components to make our lives much easier. These are called on the creation of the component. For example, `getInitialState`, which allows us to define a default state so we don’t have to worry about checking if the state item exists further down the line.
 * `getInitialState` - Return value is the initial value for state.
 * `getDefaultProps` - Sets fallback props values if props aren't supplied.
