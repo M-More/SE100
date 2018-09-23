@@ -69,3 +69,8 @@ React also offers us methods for our components to make our lives much easier. T
 * `getInitialState` - Return value is the initial value for state.
 * `getDefaultProps` - Sets fallback props values if props aren't supplied.
 * `mixins` - An array of objects, used to extend the current component's functionality.
+
+***
+
+### Conclusion
+React is an insanely powerful framework.Implementing a virtual DOM, it allows us to render components super fast whilst removing any unnecessary overhead from DOM operations.
