@@ -72,8 +72,8 @@ React also offers us methods for our components to make our lives much easier. T
 
 ***
 
-###Pros & Cons of React
-####Pros
+### Pros & Cons of React
+#### Pros
 
 1.  Virtual DOM in ReactJS makes user experience better and developer’s work faster
 2.  Permission to reuse React components significantly saves time
