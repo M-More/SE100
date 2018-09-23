@@ -39,7 +39,23 @@ Each component has a `render` function, which effectively returns the HTML that 
 #### Using JSX
 Each component has to have a render function. This acts as a “ViewModel” - before you return your HTML for the component, you can manipulate the model information into view information, meaning that your HTML could change drastically depending on the model (e.g. a dynamic repeated list of items).
 #### State
-Each component has its own “state”. When using state, you define an initial state and then you can update the state using `this.setState`. Whenever the state is updated, the component will call the render function again, and replace/change the difference between the previous render value and the new one. This is where the virtual DOM kicks in - the difference algorithm is done internally in React, so we don’t rely on the DOM updating. React will calculate the difference and produce a sort of instruction set of what to do, and perform them on the DOM.
+Every component has a `state` object and a `props` object. State is set using the `setState` method. Calling `setState` triggers UI updates and is the bread and butter of React's interactivity. If we want to set an initial state before any interaction occurs we can use the `getInitialState` method. Below, see how we can set our component's state:
+
+```javascript
+var MyComponent = React.createClass({
+    getInitialState: function(){
+        return {
+            count: 5
+        }
+    },
+    render: function(){
+        return (
+            <h1>{this.state.count}</h1>
+        )
+    }
+});
+```
+
 #### The component lifecycle
 Each component has a “lifecycle” - these are a set of functions that you can define in the component’s configuration and they will get called sometime during the components life. 
 Here are some lifecycle methods in React:
@@ -47,3 +63,9 @@ Here are some lifecycle methods in React:
 * `componentDidMount` - Invoked once, only on the client, after rendering occurs.
 * `shouldComponentUpdate` - Return value determines whether component should update.
 * `componentWillUnmount` - Invoked prior to unmounting component.
+
+####Component Methods
+React also offers us methods for our components to make our lives much easier. These are called on the creation of the component. For example, `getInitialState`, which allows us to define a default state so we don’t have to worry about checking if the state item exists further down the line.
+* `getInitialState` - Return value is the initial value for state.
+* `getDefaultProps` - Sets fallback props values if props aren't supplied.
+* `mixins` - An array of objects, used to extend the current component's functionality.
