@@ -7,6 +7,7 @@
 * Many people choose to think of React as the **'V'** in **MVC**
 * Maintained by Facebook and a community of individual developers and companies
 * First deployed on Facebook's newsfeed in 2011, Open-sourced in May 2013
+***
 
 ### Why React?
 #### Simple
@@ -18,6 +19,14 @@ Declarative views make your code more predictable and easier to debug.
 Build encapsulated components that manage their own state, then compose them to make complex UIs.
 Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
 
+***
+
 ### Related Concepts
-***React elements*** are JavaScript objects which represent HTML elements. They do not exist in the browser. They represent browser elements such as an h1, div or section.
+
+***React elements*** are JavaScript objects which represent HTML elements. They do not exist in the browser. They represent browser elements such as a `div` or `section`.
+
 ***Components*** are developer created React elements. They’re usually larger parts of the user interface which contain both the structure and functionality.  *e.g.* a `NavBar`, `LikeButton` or `ImageUploader`.
+
+
+
+
