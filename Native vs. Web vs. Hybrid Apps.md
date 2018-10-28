@@ -21,7 +21,7 @@ Native apps are developed specifically for one platform, and can take full advan
 
 Native apps are applications written in languages that the platform they are being built for accepts. For example, Swift or Objective-C is used to write native iOS apps, Java is used to write native Android apps, and C# for the most part for Windows Phone apps.
 
-### Pros of Native apps
+### Pros of Native apps
 
 * Native apps are very fast and responsive because they are built for that specific platform
 * They have the best performance
